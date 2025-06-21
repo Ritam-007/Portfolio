@@ -21,7 +21,7 @@ function Home() {
         <div className='flex  flex-col md:flex-row'>
           <div className='text-white w-full md:w-2/3 mt-8 md:mt-24 space-y-4 order-2 md:order-1'>
             <span className='text-xl'>Welcome Aboard My Feed</span>
-            <div className='flex space-x-5 text-2xl md:text-4xl'>
+            <div className='flex space-x-5 text-xl md:text-3xl '>
               <h1 className='w-fit'>Hello Folks, I'm</h1>
               {/* <span className='text-blue-500 font-bold'> Developer</span> */}
               <ReactTyped className='text-blue-500 font-bold'
@@ -44,17 +44,25 @@ function Home() {
               <div className='flex flex-col space-y-10 items-center md:flex-row md:justify-between md:space-y-0'>
                 <div className='space-y-3 font-bold'>
                   <h1 className='text-center md:text-left'>Accessible via</h1>                
-                  <div className='flex space-y-1 space-x-6'>
-                    <FaXTwitter className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/>
-                    <FaLinkedinIn className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/>
-                    <IoLogoInstagram className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/>
-                    <BiLogoTelegram className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/>
-                  </div>
+                    <ul className='flex space-y-1 space-x-6'>
+                      <li>
+                        <a href="https://x.com/Ritam_07_Pal" target='_blank'><FaXTwitter className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/></a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/ritam-pal-b38664253/" target='_blank'><FaLinkedinIn className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/syntax_error_503/?next=%2F" target='_blank'><IoLogoInstagram className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/></a>
+                      </li>
+                      <li>
+                        <a href="@ritamPal07" target='_blank'><BiLogoTelegram className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/></a>
+                      </li>
+                    </ul>
                 </div>
 
                 <div className='space-y-3 font-bold'>
                   <h1 className='text-center md:text-left'>Technologies I’m currently working with</h1>                
-                  <div className='flex space-x-6'>
+                  <div className='flex justify-between space-x-6'>
                     <TbBrandMongodb className='text-xl cursor-pointer md:text-3xl hover:scale-110 hover:border-b-2 rounded-full border-blue-500'/>
                     <SiExpress className='text-xl cursor-pointer md:text-3xl hover:scale-110 hover:border-b-2 rounded-full border-blue-500'/>
                     <FaReact className='text-2xl cursor-pointer md:text-3xl hover:scale-110 hover:border-b-2 rounded-full border-blue-500'/>

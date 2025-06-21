@@ -17,7 +17,7 @@ const navItems = [                                                      // creat
     },
     {
         id: 3,
-        text: "Projects"
+        text: "Pprtfolio"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const navItems = [                                                      // creat
     // "<>...</>"... This is called React Fregmentation, that is a feature in React that allows developers to group multiple JSX elements together without adding an extra DOM node
     <>               
         {/* Nav bar for desktop screen*/}                                        
-        <div className='max-w-screen-2xl container mx-auto px-4  md:px-20 shadow-purple-950 shadow-md text-white h-16'>
+        <div className='fixed top-0 max-w-screen-2xl container mx-auto px-4  md:px-20 shadow-purple-950 shadow-md text-white h-16 z-50 bg-black'>
             <div className='flex justify-between items-center h-16'>
                 <div className='flex space-x-2'>
                     <img src={pic} className='h-10 w-10 rounded-full' alt="" />
