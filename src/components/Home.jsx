@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../src/assets/my Pic.jpg'; 
+import pic from '../assets/my Pic.jpg'; 
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -17,7 +17,7 @@ import { ReactTyped } from "react-typed";
 function Home() {
   return (
     <>
-      <div className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-20 '>
+      <div name="Home" className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-20'>
         <div className='flex  flex-col md:flex-row'>
           <div className='text-white w-full md:w-2/3 mt-8 md:mt-24 space-y-4 order-2 md:order-1'>
             <span className='text-xl'>Welcome Aboard My Feed</span>
@@ -25,7 +25,7 @@ function Home() {
               <h1 className='w-fit'>Hello Folks, I'm</h1>
               {/* <span className='text-blue-500 font-bold'> Developer</span> */}
               <ReactTyped className='text-blue-500 font-bold'
-                strings={["Ritam", "Ui/Ux Designer", "Frontend Developer", "Backend Developer", "Coder", "Competetive Programmer"]}
+                strings={["Ritam", "Ui/Ux Designer", "Frontend Developer", "Backend Developer", "Competetive Coder", "Programmer"]}
                 typeSpeed={50}
                 backSpeed={50}
                 loop={true}
@@ -43,7 +43,7 @@ function Home() {
 
               <div className='flex flex-col space-y-10 items-center md:flex-row md:justify-between md:space-y-0'>
                 <div className='space-y-3 font-bold'>
-                  <h1 className='text-center md:text-left'>Accessible via</h1>                
+                  <h1 className='text-purple-600 text-center md:text-left'>Accessible via</h1>                
                     <ul className='flex space-y-1 space-x-6'>
                       <li>
                         <a href="https://x.com/Ritam_07_Pal" target='_blank'><FaXTwitter className='text-2xl cursor-pointer hover:scale-110 hover:border-b-2 border-blue-500'/></a>
@@ -61,7 +61,7 @@ function Home() {
                 </div>
 
                 <div className='space-y-3 font-bold'>
-                  <h1 className='text-center md:text-left'>Technologies I’m currently working with</h1>                
+                  <h1 className='text-purple-600 text-center md:text-left'>Technologies I’m currently working with</h1>                
                   <div className='flex justify-between space-x-6'>
                     <TbBrandMongodb className='text-xl cursor-pointer md:text-3xl hover:scale-110 hover:border-b-2 rounded-full border-blue-500'/>
                     <SiExpress className='text-xl cursor-pointer md:text-3xl hover:scale-110 hover:border-b-2 rounded-full border-blue-500'/>
@@ -75,7 +75,7 @@ function Home() {
             </div>
 
 
-          <div className='text-white w-full md:w-1/3 flex items-center justify-center md:ml-40 md:mt-4 order-1'>
+          <div className='text-white w-full md:w-1/3 flex items-center justify-center md:ml-40 md:mt-10 order-1'>
             <img className='border-4 border-purple-500 rounded-full md:h-[450px] md:w-auto' src={pic} alt="" />
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import pic from '../../src/assets/my Pic.jpg';                        //"pic" is the variavle name of the image located at "../../src/assets/my Pic.jpg"... this "pic" is used in  line no. 11, in img src
 import { RiMenuLine } from "react-icons/ri";                        // importing for menu bar
 import { RxCross1 } from "react-icons/rx";                          // importing for cross
+import { Link } from 'react-scroll';                             
 
 function Navbar() {
 
@@ -17,7 +18,7 @@ const navItems = [                                                      // creat
     },
     {
         id: 3,
-        text: "Pprtfolio"
+        text: "Portfolio"
     },
     {
         id: 4,
@@ -46,14 +47,14 @@ const navItems = [                                                      // creat
                     <ul className='hidden md:flex space-x-10'>
                         {
                             navItems.map(({id, text}) => (
-                                <li className='hover:scale-125 hover:text-purple-600 duration-200 hover:cursor-pointer' key={id}>{text}</li>
+                                <li className='hover:scale-125 hover:text-purple-600 duration-200 hover:cursor-pointer' key={id}><Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link></li>
                             ))
                         }
                     </ul>
 
 
-                    <div onClick={() => setMenu(!menu)} className='md:hidden'>                {/*after clicking the "menu" button, the "setMenu" function will be called*/}
-                        {menu?<RiMenuLine size={25}/>:<RxCross1 size={25}/>}              {/*If the value of menu is true, then display "menu bar" else display "cross" */}
+                    <div onClick={() => setMenu(!menu)} className='md:hidden cursor-pointer'>                {/*after clicking the "menu" button, the "setMenu" function will be called*/}
+                        {menu ? <RxCross1 size={25}/> : <RiMenuLine size={25}/>}              {/*If the value of menu is true, then display "cross" else display "menu bar" */}
                     </div>
 
 
@@ -65,7 +66,7 @@ const navItems = [                                                      // creat
 
             {
                 menu && (
-                    <div>
+                    <div className='bg-black'>
                         <ul className='md:hidden flex flex-col h-screen items-center justify-center fixed left-0 right-0 text-xl space-y-4'>
                             {
                                 navItems.map(({id, text}) => (

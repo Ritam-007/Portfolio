@@ -71,10 +71,10 @@ function Experience() {
       }
     ]
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-16'>
+    <div name="Techs" className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-16'>
       <div>
-        <h1 className='text-3xl font-bold mb-5'>Experiences and My Techs</h1>
-        <p>I am a fresher and Active looking for internship. My skills are mentioned bellow.</p>
+        <h1 className='text-purple-600 text-3xl font-bold mb-5'>Experiences and My Techs</h1>
+        <p>I am a fresher and Actively looking for internship. My skills are mentioned bellow.</p>
         <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-7 my-10'>
               {
                 card.map(({id, logo, name, text}) => (

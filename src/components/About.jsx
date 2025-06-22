@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-16'>
-      <h1 className='text-3xl font-bold mb-5'>About me</h1>
+    <div name="About me" className='max-w-screen-2xl container mx-auto px-4  md:px-20 my-16'>
+      <h1 className='text-purple-600 text-3xl font-bold mb-5'>About me</h1>
       <p>Hi, I’m Ritam — a web developer with a passion for the MERN stack and an eye for UI/UX design. I enjoy turning ideas into interactive, user-friendly websites. Always curious and driven, I’m constantly exploring the tech world and learning something new every day.</p>
       <br />
       <h1 className='text-blue-500 font-semibold text-xl mb-3'>Education</h1>
