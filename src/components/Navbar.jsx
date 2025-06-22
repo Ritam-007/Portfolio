@@ -47,7 +47,7 @@ const navItems = [                                                      // creat
                     <ul className='hidden md:flex space-x-10'>
                         {
                             navItems.map(({id, text}) => (
-                                <li className='hover:scale-125 hover:text-purple-600 duration-200 hover:cursor-pointer' key={id}><Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link></li>
+                                <li className='hover:border-b-2 hover:border-blue-500 hover:scale-125 hover:text-purple-600 duration-300 hover:cursor-pointer' key={id}><Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link></li>
                             ))
                         }
                     </ul>
