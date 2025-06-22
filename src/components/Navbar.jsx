@@ -66,11 +66,11 @@ const navItems = [                                                      // creat
 
             {
                 menu && (
-                    <div className='bg-black'>
+                    <div className='md:hidden fixed left-0 right-0 top-16 bg-black h-screen z-50'>
                         <ul className='md:hidden flex flex-col h-screen items-center justify-center fixed left-0 right-0 text-xl space-y-4'>
                             {
                                 navItems.map(({id, text}) => (
-                                    <li className='hover:scale-125 hover:text-purple-800 duration-200 hover:cursor-pointer' key={id}>{text}</li>
+                                    <li className='hover:scale-125 hover:text-purple-800 duration-200 hover:cursor-pointer' key={id}><Link onClick={() => setMenu(!menu)} to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link></li>
                                 ))
                             }  
                         </ul>
