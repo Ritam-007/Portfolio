@@ -54,9 +54,9 @@ function About() {
                 <li>
                     Bengali – Professional proficiency
                 </li>
-                <li>
+                {/*<li>
                     French – Intermediate proficiency
-                </li>
+                </li> */}
             </ul>
 
             <br />
