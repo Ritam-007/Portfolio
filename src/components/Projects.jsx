@@ -3,6 +3,7 @@ import proj1 from '../../src/assets/image1.jpeg';
 import proj2 from '../../src/assets/image2.jpeg';
 import proj3 from '../../src/assets/image3.png';
 import proj4 from '../../src/assets/image4.png';
+import proj5 from '../../src/assets/image5.png';
 
 function Projects() {
     const card = [
@@ -16,6 +17,14 @@ function Projects() {
 
       {
         id : 2,
+        logo : proj5,
+        name : "Nuro AI",
+        text : "Frontend : An AI based website to answer user's any question",
+        url: "https://nuroai.netlify.app/"
+      },
+
+      {
+        id : 3,
         logo : proj2,
         name : "SkyCast.com",
         text : "Ui-Ux : Weather forcasting design",
@@ -23,7 +32,7 @@ function Projects() {
       },
 
       {
-        id : 3,
+        id : 4,
         logo : proj3,
         name : "foodHub",
         text : "Ui-Ux : Online food App design",
@@ -31,7 +40,7 @@ function Projects() {
       },
 
       {
-        id : 4,
+        id : 5,
         logo : proj1,
         name : "cartbills.com",
         text : "Ui-Ux : Online Mobile Shop design",
@@ -43,20 +52,18 @@ function Projects() {
       <div>
         <h1 className='text-purple-600 text-3xl font-bold mb-5'>Portfolio</h1>
         <span className='underline font-semibold'>My Projects</span>
-        <div className='h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 my-8'>
+        <div className='grid grid-cols-1 justify-between sm:grid-cols-2 md:grid-cols-4 gap-8 my-8'>
           {
             card.map(({id, logo, name, text, url}) => (
-              <div className='md:w-[300px] md:h-[331px] border-[2px] border-purple-600 rounded-lg shadow-inner shadow-purple-600 p-1 cursor-pointer hover:scale-110 duration-300' key={id}>
+              <div className='md:w-[300px] md:min-h-fit border-[2px] border-purple-600 rounded-lg shadow-inner shadow-purple-600 p-1 cursor-pointer hover:scale-110 duration-300 flex flex-col justify-between' key={id}>
                 <img className='h-[200px] w-full' src={logo} alt="" />
                 <div>
                   <div className='px-2 font-bold text-xl mb-2 text-blue-500'>{name}</div>
                   <p className='px-2 pb-3 text-gray-200'>{text}</p>
                 </div>
-                <div>
-                  <a href={url} target="_blank" rel="noopener noreferrer" className='bg-orange-500 w-full max-w-full overflow-hidden text-center hover:bg-orange-700 hover:cursor-pointer font-bold rounded-md py-2 mt-2 block truncate'>
+                <a href={url} target="_blank" rel="noopener noreferrer" className='bg-orange-500 w-full max-w-full overflow-hidden text-center hover:bg-orange-700 hover:cursor-pointer font-bold rounded-md py-2 mt-2 block truncate'>
                   Check it out
-                  </a>
-                 </div>
+                </a>
               </div>
             ))
           }
